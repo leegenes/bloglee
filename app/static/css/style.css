@@ -1,0 +1,97 @@
+.navbar {
+    background-color: #000000;
+    overflow: hidden;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navbar a:visited {
+  color: #fff;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Add a color to the active/current link */
+.navbar a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.sidebar {
+  width: 15%;
+  min-width: 100px;
+  height: 100%;
+  position: fixed;
+}
+
+.about {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+.sidebar a {
+    color: black;
+    display: block;
+    padding: 12px;
+    text-decoration: none
+    text-align: center;
+}
+
+.sidebar a:hover {
+  background-color: #ccc;
+}
+
+.img-circle {
+  border-radius: 50%;
+  width: 75%;
+}
+
+.main {
+    margin-top: 50px;
+    margin-left: 15%;
+    width: 85%;
+    overflow: hidden;
+}
+
+.posts-header {
+  margin-right: 15px;
+  overflow: hidden;
+  position:fixed;
+  overflow: hidden;
+}
+
+.blog_posts {
+  padding-left: 25%;
+  margin-top: 50px;
+}
+
+.blog_posts a {
+  display: block;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 24px;
+  min-width: 225px;
+  text-decoration: none;
+  color: black;
+}
+
+.blog_posts a:hover {
+  background-color: #ccc;
+}

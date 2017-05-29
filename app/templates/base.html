@@ -1,0 +1,29 @@
+<html>
+  <script src="/static/js/moment.min.js"></script>
+  <head>
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css"/>
+    {% if title %}
+    <title>{{ title }} - info.lee</title>
+    {% else %}
+    <title>info.lee</title>
+    {% endif %}
+  </head>
+  <body>
+  <div class="navbar">
+    <a href="/soon.gif">Home</a>
+    <a href="/blog">Blog</a>
+    <a href="/soon.gif">Portfolio</a>
+  </div>
+  <div class="sidebar">
+    <div class="about">
+      <div>
+        <img class="img-circle" src="/static/img/me.jpg">
+      </div>
+      <p><big>Lee Haugen</big><br>A developer<br><small>..but not a web developer</small></p>
+    </div>
+  </div>
+  <div class="main">
+  {% block content %}{% endblock %}
+  </div>
+</body>
+</html>
