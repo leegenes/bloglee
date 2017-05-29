@@ -2,6 +2,8 @@
   <script src="/static/js/moment.min.js"></script>
   <head>
     <link rel="stylesheet" type="text/css" href="/static/css/style.css"/>
+    {{ moment.include_jquery() }}
+    {{ moment.include_moment() }}
     {% if title %}
     <title>{{ title }} - info.lee</title>
     {% else %}
@@ -9,6 +11,7 @@
     {% endif %}
   </head>
   <body>
+  <div class="base">
   <div class="navbar">
     <a href="/soon.gif">Home</a>
     <a href="/blog">Blog</a>
@@ -22,6 +25,7 @@
       <p><big>Lee Haugen</big><br>A developer<br><small>..but not a web developer</small></p>
     </div>
   </div>
+</div>
   <div class="main">
   {% block content %}{% endblock %}
   </div>
